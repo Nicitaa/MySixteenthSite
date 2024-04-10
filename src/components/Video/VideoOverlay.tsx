@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react"
 import { FaPlay, FaPause, FaStepBackward, FaStepForward } from "react-icons/fa"
-import { BiFullscreen, BiExitFullscreen } from 'react-icons/bi'
+import { BiFullscreen, BiExitFullscreen } from "react-icons/bi"
 
 interface VideoOverlayProps {
   previewSrc: string
@@ -25,9 +25,8 @@ const VideoOverlay: React.FC<VideoOverlayProps> = ({
   playPauseVideo,
   jumpTime,
   setJumpTime,
-  previewSrc,
+  previewSrc
 }) => {
-
   const [isFullScreen, setIsFullscreen] = useState(false)
   useEffect(() => {
     document.addEventListener("fullscreenchange", () => {
@@ -42,7 +41,6 @@ const VideoOverlay: React.FC<VideoOverlayProps> = ({
   if (video) {
     const JUMP_FACTOR = 4
 
-
     const handleJumpForward = () => {
       setJumpTime((prevJumpTime: number) => prevJumpTime + JUMP_FACTOR)
       const newTime = video.currentTime + JUMP_FACTOR
@@ -54,11 +52,6 @@ const VideoOverlay: React.FC<VideoOverlayProps> = ({
       const newTime = video.currentTime - JUMP_FACTOR
       video.currentTime = Math.floor(newTime)
     }
-
-
-
-
-
 
     const toggleFullScreen = () => {
       if (document.fullscreenElement) {
@@ -79,46 +72,32 @@ const VideoOverlay: React.FC<VideoOverlayProps> = ({
               <div
                 className={`${`progress h-full w-0`} ${video?.ended ? "" : "progress-inner"}`}
                 style={{
-                  animationPlayState:
-                    isPlaying && !isLoading ? "running" : "paused",
-                  animationDuration: video?.ended
-                    ? "0s"
-                    : `${Math.ceil(video.duration - jumpTime)}s`,
+                  animationPlayState: isPlaying && !isLoading ? "running" : "paused",
+                  animationDuration: video?.ended ? "0s" : `${Math.ceil(video.duration - jumpTime)}s`
                 }}
               />
             </div>
             {/* Video actions */}
             <div className={`w-[95%] mx-auto flex justify-between items-center py-3 font-[12px]`}>
-              <div className='flex justify-between gap-x-4'>
-
+              <div className="flex justify-between gap-x-4">
                 {/* Play/pause */}
-                <div className='flex justify-center items-center'>
-                  <button onClick={playPauseVideo}>
-                    {isPlaying ? <FaPause /> : <FaPlay />}
-                  </button>
+                <div className="flex justify-center items-center">
+                  <button onClick={playPauseVideo}>{isPlaying ? <FaPause /> : <FaPlay />}</button>
                 </div>
                 {/* +10s/-10s */}
-                <div className='flex justify-center items-center'>
-                  <button
-                    className='disabled:opacity-70'
-                    disabled={!isPlaying}
-                    onClick={handleBackward}>
+                <div className="flex justify-center items-center">
+                  <button className="disabled:opacity-70" disabled={!isPlaying} onClick={handleBackward}>
                     <FaStepBackward />
                   </button>
-                  <button
-                    className='disabled:opacity-70'
-                    disabled={!isPlaying}
-                    onClick={handleJumpForward}>
+                  <button className="disabled:opacity-70" disabled={!isPlaying} onClick={handleJumpForward}>
                     <FaStepForward />
                   </button>
                 </div>
-                <div className='flex justify-center items-center'>
+                <div className="flex justify-center items-center">
                   <span>
                     {currentTime}/{videoDuration}
                   </span>
                 </div>
-
-
               </div>
 
               <button onClick={toggleFullScreen}>
@@ -128,26 +107,30 @@ const VideoOverlay: React.FC<VideoOverlayProps> = ({
           </div>
         </div>
         {/* Video without actions bar */}
-        <div className={`${isPlaying
-          ? "after:opacity-0 	 before:opacity-0 		after:scale-90 	before:scale-90"
-          : "after:opacity-100 before:opacity-100 	after:scale-100	before:scale-100"} 
-				${isLoading ? '' : 'video-wrapper'}
+        <div
+          className={`${
+            isPlaying
+              ? "after:opacity-0 	 before:opacity-0 		after:scale-90 	before:scale-90"
+              : "after:opacity-100 before:opacity-100 	after:scale-100	before:scale-100"
+          } 
+				${isLoading ? "" : "video-wrapper"}
 				after:translate-x-[-20%] after:translate-y-[-110%]
 				before:translate-x-[-50%] before:translate-y-[-75%]
-				absolute top-0 right-0 bottom-[10%] left-0`} onClick={playPauseVideo} />
+				absolute top-0 right-0 bottom-[10%] left-0`}
+          onClick={playPauseVideo}
+        />
         {/* Preview */}
-        <div className={`preview bg-[url('${previewSrc}')] bg-no-repeat bg-cover
-				absolute inset-0 z-[1]`} onClick={() => {
+        <div
+          className={`preview bg-[url('${previewSrc}')] bg-no-repeat bg-cover
+				absolute inset-0 z-[1]`}
+          onClick={() => {
             playPauseVideo()
-          }}>
-        </div>
+          }}
+        ></div>
       </>
     )
-  }
-  else {
-    return (
-      <div>Video is null</div>
-    )
+  } else {
+    return <div>Video is null</div>
   }
 }
 

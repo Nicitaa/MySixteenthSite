@@ -15,15 +15,15 @@
   position: relative;
 
   z-index: 100;
-  
-  border:2px solid #424242 !important;
-  border-radius: clamp(8px,1.25vw,24px);
+
+  border: 2px solid #424242 !important;
+  border-radius: clamp(8px, 1.25vw, 24px);
 
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
   box-shadow: 12px 16px 8px 0px rgba(42, 42, 42, 0.25);
-  
+
   -ms-overflow-style: none;
   scrollbar-width: none;
 }
@@ -32,11 +32,6 @@
   display: none;
 }
 
-
-
-
-
-
 .modal-header {
   position: relative;
   width: 100%;
@@ -44,40 +39,31 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 0rem clamp(0.75rem, 0.5455rem + 1.0227vw, 3rem);
 
-  -webkit-box-shadow: 0px 14px 12px -3px rgba(32,32,32,0.625);
-  -moz-box-shadow: 0px 14px 12px -3px rgba(32,32,32,0.625);
-  box-shadow: 0px 14px 12px -3px rgba(16,16,16,0.75);
-  
+  -webkit-box-shadow: 0px 14px 12px -3px rgba(32, 32, 32, 0.625);
+  -moz-box-shadow: 0px 14px 12px -3px rgba(32, 32, 32, 0.625);
+  box-shadow: 0px 14px 12px -3px rgba(16, 16, 16, 0.75);
+
   z-index: 9;
 }
-
-
-
-
 
 .modal-body {
   display: flex;
   flex-flow: column;
-  row-gap:2rem;
+  row-gap: 2rem;
   height: 77.5%;
 }
-.modal-body::-webkit-scrollbar { 
-  display: none; 
+.modal-body::-webkit-scrollbar {
+  display: none;
 }
 
-
-
-
-
-
 .modal-title {
-  font-family: 'Cormorant Upright', serif;
-  color:#DCCA87;
+  font-family: "Cormorant Upright", serif;
+  color: #dcca87;
   font-weight: 600;
   font-size: var(--text-md);
 }
-
 
 .tooltip-modal:hover .tooltiptext-modal {
   opacity: 1;
@@ -87,10 +73,9 @@
   width: auto;
   height: auto;
   padding: var(--padding-sm);
-  color:var(--subTitle);
+  color: var(--subTitle);
   z-index: 99;
 }
-
 
 .tooltiptext-modal {
   opacity: 0;
@@ -105,15 +90,11 @@
   pointer-events: none;
 }
 
-
-
 .blur {
-  backdrop-filter:blur(20px);
+  backdrop-filter: blur(20px);
   /* for disable tailwind styles */
-  filter:blur(0px) !important;
+  filter: blur(0px) !important;
 }
-
-
 
 .close-button {
   cursor: pointer;
