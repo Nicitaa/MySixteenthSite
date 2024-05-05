@@ -77,7 +77,7 @@
           }
         ],
         "price": 49.99,
-        "imgUrl": "./menu/main/roast-beef.avif"
+        "imgUrl": "/modals/modalMenu/main//roast-beef.avif"
       },
       {
         "id": "9137360d-797e-43b3-88a4-6153927249e8",
@@ -110,7 +110,7 @@
           }
         ],
         "price": 15.49,
-        "imgUrl": "./menu/main/naruto-pasta.avif"
+        "imgUrl": "/modals/modalMenu/main/naruto-pasta.avif"
       },
       {
         "id": "b4237490-ae34-4d2c-8d1c-59acc57211b5",
@@ -138,7 +138,7 @@
           }
         ],
         "price": 27.7,
-        "imgUrl": "./menu/main/pizza.avif"
+        "imgUrl": "/modals/modalMenu/main/pizza.avif"
       },
       {
         "id": "820cbfff-e858-49f5-aa07-051b0307ef49",
@@ -166,7 +166,7 @@
           }
         ],
         "price": 24.4,
-        "imgUrl": "./menu/main/beef-with-fries.avif"
+        "imgUrl": "/modals/modalMenu/main/beef-with-fries.avif"
       },
       {
         "id": "57e05443-834a-4fd4-8ac6-312f2e85d738",
@@ -194,7 +194,7 @@
           }
         ],
         "price": 18.18,
-        "imgUrl": "./menu/main/cheese-soup.avif"
+        "imgUrl": "/modals/modalMenu/main/cheese-soup.avif"
       }
     ]
   },
@@ -223,7 +223,7 @@
           }
         ],
         "price": 8.88,
-        "imgUrl": "./menu/deserts/pancakes.avif"
+        "imgUrl": "/modals/modalMenu/deserts/pancakes.avif"
       },
       {
         "id": "cda3d890-7410-4f39-9fdf-8309d0d14069",
@@ -246,7 +246,7 @@
           }
         ],
         "price": 45.99,
-        "imgUrl": "./menu/deserts/banana-cheesecake.avif"
+        "imgUrl": "/modals/modalMenu/deserts/banana-cheesecake.avif"
       },
       {
         "id": "471e1dfa-7dc8-445e-841c-83b3fdc1602f",
@@ -279,7 +279,7 @@
           }
         ],
         "price": 12.19,
-        "imgUrl": "./menu/deserts/fruits-salat.avif"
+        "imgUrl": "/modals/modalMenu/deserts/fruits-salat.avif"
       },
       {
         "id": "9734a6b1-e1aa-4c16-ac10-50864926b5cd",
@@ -307,7 +307,7 @@
           }
         ],
         "price": 27.77,
-        "imgUrl": "./menu/deserts/tiramisu.avif"
+        "imgUrl": "/modals/modalMenu/deserts/tiramisu.avif"
       },
       {
         "id": "7f32d6d8-50be-47aa-9ffb-285cda6d48f1",
@@ -350,7 +350,7 @@
           }
         ],
         "price": 24.99,
-        "imgUrl": "./menu/deserts/ice-cream.avif"
+        "imgUrl": "/modals/modalMenu/deserts/ice-cream.avif"
       }
     ]
   },
@@ -399,7 +399,7 @@
           }
         ],
         "price": 3,
-        "imgUrl": "./menu/drinks/water.avif"
+        "imgUrl": "/modals/modalMenu/drinks/water.avif"
       },
       {
         "id": "4b171e92-f434-4abe-a102-f6d1f80a827c",
@@ -442,7 +442,7 @@
           }
         ],
         "price": 6,
-        "imgUrl": "./menu/drinks/pepsi.avif"
+        "imgUrl": "/modals/modalMenu/drinks/pepsi.avif"
       },
       {
         "id": "3bb363b3-78e8-4d8b-965d-af5d44b7e5df",
@@ -485,7 +485,7 @@
           }
         ],
         "price": 6,
-        "imgUrl": "./menu/drinks/mirinda.avif"
+        "imgUrl": "/modals/modalMenu/drinks/mirinda.avif"
       },
       {
         "id": "db7334c1-9c98-402f-8297-114db27a5cb8",
@@ -528,7 +528,7 @@
           }
         ],
         "price": 7,
-        "imgUrl": "./menu/drinks/7up.avif"
+        "imgUrl": "/modals/modalMenu/drinks/7up.avif"
       },
       {
         "id": "ac613b6f-5fce-4b6a-bb47-1630e8f84fb9",
@@ -561,7 +561,7 @@
           }
         ],
         "price": 2.5,
-        "imgUrl": "./menu/drinks/coffee.avif"
+        "imgUrl": "/modals/modalMenu/drinks/coffee.avif"
       }
     ]
   }

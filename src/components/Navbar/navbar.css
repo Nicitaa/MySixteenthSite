@@ -3,51 +3,44 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  min-width:100%;
-  padding:clamp(0.75rem,1vw,100rem) clamp(1.5rem,1.5vw,100rem);
-  font-size: clamp(0.75rem,1.25vw,100rem);
+  min-width: 100%;
+  padding: clamp(0.75rem, 1vw, 100rem) clamp(1.5rem, 1.5vw, 100rem);
+  font-size: clamp(0.75rem, 1.25vw, 100rem);
   margin-bottom: auto;
-  
-  -webkit-box-shadow: 7px 10px 50px 1px rgba(0,0,0,0.75);
-  -moz-box-shadow: 7px 10px 50px 1px rgba(0,0,0,0.75);
-  box-shadow: 7px 10px 50px 1px rgba(0,0,0,0.75);
+
+  -webkit-box-shadow: 7px 10px 50px 1px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 7px 10px 50px 1px rgba(0, 0, 0, 0.75);
+  box-shadow: 7px 10px 50px 1px rgba(0, 0, 0, 0.75);
 
   /* ff 3.6+ */
-  background:-moz-linear-gradient(180deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0.9) 50%, rgba(0, 0, 0, 0.7) 100%); 
+  background: -moz-linear-gradient(180deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0.9) 50%, rgba(0, 0, 0, 0.7) 100%);
 
   /* safari 5.1+,chrome 10+ */
-  background:-webkit-linear-gradient(180deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0.9) 50%, rgba(0, 0, 0, 0.7) 100%);
+  background: -webkit-linear-gradient(180deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0.9) 50%, rgba(0, 0, 0, 0.7) 100%);
 
   /* opera 11.10+ */
-  background:-o-linear-gradient(180deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0.9) 50%, rgba(0, 0, 0, 0.7) 100%);
+  background: -o-linear-gradient(180deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0.9) 50%, rgba(0, 0, 0, 0.7) 100%);
 
   /* ie 6-9 */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#000000', GradientType=1 );
 
   /* ie 10+ */
-  background:-ms-linear-gradient(180deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0.9) 50%, rgba(0, 0, 0, 0.7) 100%);
+  background: -ms-linear-gradient(180deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0.9) 50%, rgba(0, 0, 0, 0.7) 100%);
 
   /* global 94%+ browsers support */
-  background:linear-gradient(180deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0.9) 50%, rgba(0, 0, 0, 0.7) 100%);
-  
+  background: linear-gradient(180deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0.9) 50%, rgba(0, 0, 0, 0.7) 100%);
+
   z-index: 99;
 }
 
 .link {
   cursor: pointer;
+  white-space: nowrap;
 }
 
 .navbar-logo {
   max-width: 12.5%;
 }
-
-
-
-
-
-
-
-
 
 .navbar-links {
   display: flex;
@@ -56,11 +49,11 @@
 }
 
 .navbar-auth {
-font-weight: 600;
-display: flex;
-justify-content: center;
-align-items: center;
-gap:2rem;
+  font-weight: 600;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
 }
 
 .navbar-auth a {
@@ -70,7 +63,7 @@ gap:2rem;
 /* don't modify !important here cause some users will not see hover effect 
 cause they have some extentions like dark reader */
 .navbar-auth a:hover {
-  border-bottom:1px solid #DCCA87 !important
+  border-bottom: 1px solid #dcca87 !important;
 }
 
 .line {
@@ -79,20 +72,12 @@ cause they have some extentions like dark reader */
   background: linear-gradient(to right, #000000, #606060, #000000);
 }
 
-
-
-
-
-
-
-
-
 .navbar-hamburger-menu {
   position: fixed;
   left: 0;
   right: 0;
-  bottom:0;
-  top:0;
+  bottom: 0;
+  top: 0;
   background-color: #000000;
   display: flex;
   flex-flow: column;
@@ -100,16 +85,15 @@ cause they have some extentions like dark reader */
   justify-content: center;
   align-items: center;
   z-index: 100;
-  font-size:1.5rem;
+  font-size: 1.5rem;
 }
 
 .navbar-hamburger-menu_links-mobile {
-display: flex;
-justify-content: center;
-align-items: center;
-flex-flow: column;
-gap: 1rem;
-
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column;
+  gap: 1rem;
 }
 
 .navbar-hamburger-menu_auth-mobile {
@@ -128,26 +112,24 @@ gap: 1rem;
   right: 1.25rem;
   width: 1.25rem;
   height: 1.25rem;
-  fill:#ffffff;
+  fill: #ffffff;
+  cursor: pointer;
 }
 
-
-
-
 /* for phones like this https://prnt.sc/_tfU5Zqal7cw in 4:3 view */
-@media (min-width:2560px) {
+@media (min-width: 2560px) {
   .navbar-mobile-icon {
     display: none;
   }
 }
-@media (max-width:2560px) {
+@media (max-width: 2560px) {
   .navbar-mobile-icon {
     display: none;
   }
 }
 
 /* Tablet */
-@media (max-width:768px) {
+@media (max-width: 768px) {
   .navbar-auth {
     display: none;
   }
@@ -160,39 +142,37 @@ gap: 1rem;
 }
 
 /* Mobile L */
-@media (max-width:425px) {
+@media (max-width: 425px) {
   .navbar-logo {
     max-width: 25%;
   }
   .navbar-links {
     display: none;
-   }
+  }
 }
 
 /* Mobile M */
-@media (max-width:375px) {
- .navbar-logo {
-  max-width: 30%;
-}
-.navbar-hamburger-menu_close {
-  top: 1.5rem;
-  right: 1.5rem;
-  width: 1.5rem;
-  height: 1.5rem;
-}
+@media (max-width: 375px) {
+  .navbar-logo {
+    max-width: 30%;
+  }
+  .navbar-hamburger-menu_close {
+    top: 1.5rem;
+    right: 1.5rem;
+    width: 1.5rem;
+    height: 1.5rem;
+  }
 }
 
 /* Mobile S */
-@media (max-width:320px) {
+@media (max-width: 320px) {
   .navbar-logo {
     max-width: 40%;
   }
 }
 
-
-
-@media (max-height:360px) {
+@media (max-height: 360px) {
   .navbar-hamburger-menu {
-    font-size: clamp(1.25rem,1.75vw,4.5rem);
+    font-size: clamp(1.25rem, 1.75vw, 4.5rem);
   }
 }
