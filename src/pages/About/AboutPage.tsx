@@ -29,14 +29,15 @@ export function AboutPage() {
               src="/pages/about/quality.png"
             />
             - High quality websites because <br />
-            <br />
-            Best practices like DRY SOLID KISS
-            <br />
-            High performance compared to UX
-            <br />
-            SEO optimization (404 / opengraph image / Next.js and redis cache / SSG SSR ISR / optimized images)
-            <br />
-            Documentation + architecture (if required for scalability)
+            <span className="text-xs">
+              Best practices like DRY SOLID KISS
+              <br />
+              High performance compared to UX
+              <br />
+              SEO optimization (404 / opengraph image / Next.js and redis cache / SSG SSR ISR / optimized images)
+              <br />
+              Documentation + architecture (if required for scalability)
+            </span>
           </span>
         </div>
       </div>
