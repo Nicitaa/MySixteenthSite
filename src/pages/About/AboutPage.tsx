@@ -23,21 +23,23 @@ export function AboutPage() {
             - You become site with high conversion rate
             <br />
           </span>
-          <span className="flex flex-row gap-2">
+          <span className="flex flex-row gap-2 items-start">
             <img
               className="w-16 h-16 4K:w-10 4K:h-10 LaptopL:w-6 LaptopL:h-6 mt-1 Tablet:mt-0"
               src="/pages/about/quality.png"
+              alt="Quality"
             />
-            - High quality websites because <br />
-            <span className="text-xs">
-              Best practices like DRY SOLID KISS
-              <br />
-              High performance compared to UX
-              <br />
-              SEO optimization (404 / opengraph image / Next.js and redis cache / SSG SSR ISR / optimized images)
-              <br />
-              Documentation + architecture (if required for scalability)
-            </span>
+            <div>
+              <p className="font-medium">- High-quality websites because:</p>
+              <ul className="text-xs pl-10 list-disc ">
+                <li className="text-[22px]">Best practices like DRY SOLID KISS</li>
+                <li className="text-[22px]">High performance compared to UX</li>
+                <li className="text-[22px]">
+                  SEO optimization (404 / Opengraph image / Next.js and Redis cache / SSG SSR ISR / Optimized images)
+                </li>
+                <li className="text-[22px]">Documentation + architecture (if required for scalability)</li>
+              </ul>
+            </div>
           </span>
         </div>
       </div>
