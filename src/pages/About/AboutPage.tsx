@@ -6,21 +6,19 @@ export function AboutPage() {
     >
       <div className="mt-32 flex flex-col justify-center">
         <h1 className="preTitle mb-4">
-          This is additional information to portfolio{" "}
-          <a className="text-blue-400" onClick={() => window.open("https://nicitaa.com")}>
-            nicitaa.com
-          </a>
+          Discover the story behind
+          <a className="text-blue-400">Mikke restaurant</a>
         </h1>
         <div className="subTitle flex flex-col gap-2">
-          <span className="preTitle">I'm Frontend web developer</span>
+          <span className="preTitle">Authentic flavors, unforgettable experiences</span>
           <span className="flex flex-row gap-2">
-            <img className="w-16 h-16 4K:w-10 4K:h-10 LaptopL:w-6 LaptopL:h-6" src="/pages/about/7.svg" />
-            - You become any website on your taste
+            <img className="w-16 h-16 4K:w-10 4K:h-10 LaptopL:w-6 LaptopL:h-6" src="/pages/about/chef.svg" />
+            - Our chefs craft dishes with fresh, locally sourced ingredients
             <br />
           </span>
           <span className="flex flex-row gap-2">
-            <img className="w-16 h-16 4K:w-10 4K:h-10 LaptopL:w-6 LaptopL:h-6" src="/pages/about/conversion.png" />
-            - You become site with high conversion rate
+            <img className="w-16 h-16 4K:w-10 4K:h-10 LaptopL:w-6 LaptopL:h-6" src="/pages/about/dining.png" />
+            - A cozy ambiance perfect for family gatherings and romantic dinners
             <br />
           </span>
           <span className="flex flex-row gap-2 items-start">
@@ -30,14 +28,12 @@ export function AboutPage() {
               alt="Quality"
             />
             <div>
-              <p className="font-medium">- High-quality websites because:</p>
+              <p className="font-medium">- Why choose us?</p>
               <ul className="text-xs pl-10 list-disc ">
-                <li className="text-[22px]">Best practices like DRY SOLID KISS</li>
-                <li className="text-[22px]">High performance compared to UX</li>
-                <li className="text-[22px]">
-                  SEO optimization (404 / Opengraph image / Next.js and Redis cache / SSG SSR ISR / Optimized images)
-                </li>
-                <li className="text-[22px]">Documentation + architecture (if required for scalability)</li>
+                <li className="text-[22px]">Authentic recipes passed down through generations</li>
+                <li className="text-[22px]">Exceptional customer service and hospitality</li>
+                <li className="text-[22px]">Fresh and organic ingredients for every dish</li>
+                <li className="text-[22px]">An extensive menu catering to all tastes and preferences</li>
               </ul>
             </div>
           </span>
