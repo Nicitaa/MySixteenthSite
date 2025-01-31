@@ -16,7 +16,7 @@ export function Footer() {
           <p className="footer-subTitle">Sudenkaari 47, 02580 Siuntio</p>
           <ul className="footer-subTitle">
             <li>
-              <a href="tel:+3584573992670">+3584573992670</a>
+              <a href="tel:+358469664323">+358469664323</a>
             </li>
             <li className="flex flex-row gap-2 items-center justify-center">
               <a className="hover:text-[--cta]" href="https://t.me/BF_GO" target="_blank">
