@@ -24,7 +24,7 @@ MobileL:gap-y-8"
         </svg>
         <h1 className="title inline-block">Photo Gallery</h1>
         <p className="subTitle mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae, assumenda?</p>
-        <Button onClick={() => {}} label="View more" />
+        <Button label="View more" />
       </div>
       <div
         className="flex gap-x-16 h-[60vh] max-w-[70%] overflow-hidden
